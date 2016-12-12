@@ -71,6 +71,10 @@
 	
 	var _BlogPosts2 = _interopRequireDefault(_BlogPosts);
 	
+	var _About = __webpack_require__(246);
+	
+	var _About2 = _interopRequireDefault(_About);
+	
 	var _CreatePost = __webpack_require__(238);
 	
 	var _CreatePost2 = _interopRequireDefault(_CreatePost);
@@ -97,7 +101,6 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// components
 	var App = _react2.default.createClass({
 	  displayName: 'App',
 	
@@ -113,6 +116,9 @@
 	  }
 	});
 	
+	// components
+	
+	
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.browserHistory },
@@ -120,7 +126,7 @@
 	    _reactRouter.Route,
 	    { path: '/', component: App },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _BlogPosts2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: About }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/classes', component: _Classes2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/calendar', component: _Calendar2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/gallery', component: _Gallery2.default }),
@@ -37059,6 +37065,47 @@
 	});
 	
 	exports.default = Contact;
+
+/***/ },
+/* 245 */,
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var About = _react2.default.createClass({
+	  displayName: 'About',
+	
+	  render: function (_render) {
+	    function render() {
+	      return _render.apply(this, arguments);
+	    }
+	
+	    render.toString = function () {
+	      return _render.toString();
+	    };
+	
+	    return render;
+	  }(function () {
+	    render(_react2.default.createElement(
+	      'div',
+	      null,
+	      'This is the About page'
+	    ));
+	  })
+	});
+	
+	exports.default = About;
 
 /***/ }
 /******/ ]);

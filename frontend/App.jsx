@@ -5,6 +5,7 @@ import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 // components
 import Navbar from './components/Navbar';
 import BlogPosts from './components/BlogPosts';
+import About from "./components/About"
 import CreatePost from './components/CreatePost';
 import Login from "./components/Login";
 import Classes from "./components/Classes";
